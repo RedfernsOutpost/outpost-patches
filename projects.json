@@ -143,6 +143,51 @@
     ]
   },
   {
+    "id": "ekipad",
+    "title": "Ekipad",
+    "kind": "App",
+    "platform": "iPhone · Mac",
+    "status": "Coming soon to the App Store",
+    "summary": "Turn your iPhone into a game controller for your Mac. Bluetooth, peer-to-peer Wi-Fi or USB, no router and no accounts.",
+    "description": "Ekipad turns your iPhone into a game controller for your Mac, styled like a Tokyo train line. It pairs with Ekipad Host, a free app for your Mac, and connects over Bluetooth, peer-to-peer Wi-Fi or a USB cable, with no router, no account and nothing sent to the internet.\n\nOn macOS 15 and later your Mac sees a standard game controller, so Steam, SDL games and native ports just work, and game rumble buzzes the phone. For games that only take a keyboard and mouse, pick a route: WASD, emulator layouts, mouse mode or your own mapping. Screen mode shows your Mac's display on the phone with a trackpad, and the layout editor lets you move, resize and hide every button.",
+    "features": [
+      "Your Mac sees a real game controller (macOS 15+)",
+      "Keyboard and mouse routes for any game",
+      "Bluetooth, peer-to-peer Wi-Fi and USB, no router",
+      "Up to four phones as players 1 to 4",
+      "Screen mode with trackpad and mouse",
+      "Layout editor, gyro aiming and rumble",
+      "No ads, no accounts, nothing leaves your devices"
+    ],
+    "cover": "/projects/ekipad/icon.png",
+    "coverStyle": "icon",
+    "screenshots": [
+      "/projects/ekipad/01-pad.jpg",
+      "/projects/ekipad/02-pad-dark.jpg",
+      "/projects/ekipad/03-settings.jpg",
+      "/projects/ekipad/04-layout-editor.jpg",
+      "/projects/ekipad/05-pairing.jpg",
+      "/projects/ekipad/06-mac-host.jpg"
+    ],
+    "smooth": true,
+    "coverSmooth": true,
+    "note": "Ekipad needs Ekipad Host, a free app for your Mac (macOS 14 or later).",
+    "links": [
+      {
+        "label": "Download Ekipad Host for Mac",
+        "url": "https://github.com/RedfernsOutpost/ekipad/releases/latest"
+      },
+      {
+        "label": "Support",
+        "url": "https://redfernsoutpost.com/ekipad/"
+      },
+      {
+        "label": "Privacy policy",
+        "url": "https://redfernsoutpost.com/ekipad/privacy/"
+      }
+    ]
+  },
+  {
     "id": "packmule",
     "title": "Packmule",
     "kind": "App",
