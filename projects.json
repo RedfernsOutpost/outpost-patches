@@ -5,16 +5,16 @@
     "kind": "Game",
     "platform": "PS Vita",
     "status": "In development",
-    "summary": "Chao World as a game of its own on the PS Vita: the Chao garden from Sonic Adventure 2: Battle, grown into a full year of seasons.",
-    "description": "Chao World: Seasons is a Chao World game made for PS Vita. It started with the Chao World inside Sonic Adventure 2: Battle: the gardens, Chao and everything you do with them, taken out of the main game and put into its own game. From there it was built out into a bigger Chao World of its own where I hope it can be a full game.\n\nThe year turns, there is Spring, Summer, Autumn and Winter, with a day/night cycle, moon phases and festivals in the lobby. I am aiming to make every Chao a unique experience, with their own personality, family, dreams and favorite things.\n\nChao Games, tournaments, photo pose mode, journal, status screens, decorating and new places to visit.",
+    "summary": "The Chao garden from Sonic Adventure 2: Battle, rebuilt as its own game for PS Vita and set across a full year of seasons.",
+    "description": "It began as the Chao World inside SA2: Battle, pulled out of the main game. Now it's growing into a full game of its own, where every Chao has a personality, a family, dreams and favorite things.",
     "features": [
       "Chao World only: no story mode, every character playable",
-      "Four seasons, day and night, rainy days, falling sakura petals",
-      "Livelier Chao: personalities, families, dreams and rare Chao",
-      "The Chao Games for each season: race, karate and a swim, alone or as a team of three",
+      "Four seasons, day and night, moon phases, rain and falling sakura petals",
+      "Festivals in the lobby and rare Chao",
+      "Seasonal Chao Games and tournaments: race, karate and swimming, solo or as a team of three",
       "Photo mode, a Chao Journal, fishing and garden decorating",
       "New places, like the Station Square Garden and the Chao Refuge",
-      "Features from CWE"
+      "Features from Chao World Extended (CWE)"
     ],
     "cover": "/projects/chao-world-seasons/four-seasons.webp",
     "coverStyle": "icon",
@@ -34,24 +34,24 @@
     "screenshotNote": "Work-in-progress screenshots.",
     "smooth": false,
     "coverSmooth": false,
-    "note": "A fan project. Not affiliated with or endorsed by SEGA. Sonic Adventure 2, Sonic and Chao are trademarks of SEGA. Seasons runs on data from your own copy of the game, and no game files are distributed here."
+    "note": "A fan project, not affiliated with or endorsed by SEGA. Sonic Adventure 2, Sonic and Chao are trademarks of SEGA. Seasons runs on data from your own copy of the game; no game files are distributed here."
   },
   {
     "id": "hvac-trail",
     "title": "The HVAC Trail",
     "kind": "Game",
     "platform": "iPhone",
-    "status": "Coming soon",
+    "status": "Coming soon to the App Store",
     "summary": "One American summer. Five techs. 530 miles of service calls between you and Labor Day.",
-    "description": "The HVAC Trail is an Oregon Trail style survival game about running residential air conditioning calls through the hottest months of the year. Written by a working HVAC tech, tech to tech.\n\nPick who you are, stock the van at Big Lou's Supply House and hit the road. At every house you size up the unit, take readings or try an old trick, and make the call: a band-aid, or doing it right. Between calls, keep your crew of five hydrated and on their feet in the heat, all the way to Labor Day.",
+    "description": "An Oregon Trail style survival game about summer AC calls, written by a working HVAC tech, tech to tech.\n\nAt every house, size up the unit and make the call: a band-aid, or doing it right. Between calls, keep your crew hydrated and on their feet in the heat.",
     "features": [
-      "Diagnose real faults from the data tag, meter, amp clamp and gauges, or an old trick",
-      "Start as an owner-operator, a senior tech or a first-year apprentice",
+      "Diagnose real faults with the data tag, meter, amp clamp and gauges, or an old trick",
+      "Play as an owner-operator, senior tech or first-year apprentice",
       "Stock up at three supply houses and paint your own van",
       "Big jobs along the route: a McMansion, a hoarder house, a mobile home park and a lake house rental",
       "Game Center leaderboard and a Hall of Fame",
       "EGA DOS pixel art",
-      "Plays offline, with no account to make"
+      "Plays offline, no account needed"
     ],
     "cover": "/projects/hvac-trail/on-the-road.png",
     "screenshots": [
@@ -66,7 +66,6 @@
       "/projects/hvac-trail/lake-house.png",
       "/projects/hvac-trail/labor-day.png"
     ],
-    "note": "Coming soon to the App Store.",
     "links": [
       {
         "label": "Support",
@@ -79,16 +78,15 @@
     "title": "Tinbox",
     "kind": "App",
     "platform": "iPhone",
-    "summary": "A free GBA, GB and GBC emulator for iPhone, built on the mGBA core. No ads, no accounts, no paid version.",
-    "description": "Tinbox is a native iOS emulator for GBA, GB and GBC games, with a SwiftUI interface, Metal rendering and the accurate mGBA core underneath.\n\nIt comes with two free homebrew games, keeps your library tidy, plays in portrait or landscape, and has save states, rewind, a Time Capsule that remembers your whole playthrough, a speedrun timer, RetroAchievements, themes and skins.",
+    "summary": "A free GBA, GB and GBC emulator for iPhone. No ads, no accounts, no paid version.",
+    "description": "A native iPhone emulator with a SwiftUI interface and Metal rendering, running the accurate mGBA core. It plays in portrait or landscape and keeps your library tidy.",
     "features": [
-      "mGBA core, rendered with Metal",
       "Save states, rewind and fast-forward",
-      "Time Capsule playthrough snapshots",
+      "Time Capsule: automatic snapshots of your whole playthrough",
       "Speedrun timer and RetroAchievements",
       "Themes, skins and your own button layout",
-      "Bluetooth controller support",
-      "No ads, no accounts, nothing leaves your phone"
+      "Bluetooth controllers",
+      "Your games and saves stay in plain folders on your phone"
     ],
     "cover": "/projects/tinbox/icon.png",
     "coverStyle": "icon",
@@ -101,7 +99,7 @@
       "/projects/tinbox/03-landscape.jpg"
     ],
     "screenshotNote": "The game shown is Tobu Tobu Girl Deluxe, a free homebrew game.",
-    "note": "Tinbox comes with two free homebrew games. Add games you own; it never downloads any.",
+    "note": "Comes with two free homebrew games. Add games you own; Tinbox never downloads any.",
     "links": [
       {
         "label": "Get it on the App Store",
@@ -173,13 +171,12 @@
     "platform": "iPhone",
     "status": "",
     "summary": "A free file mule for iOS. Haul files between your phone and anything that speaks SMB, FTP or SFTP.",
-    "description": "Packmule moves files between your phone and Windows shares, NAS boxes, Linux machines and other phones. It can also host: start its built-in FTP server and other devices connect to the phone.\n\nFree means free. SMB, FTP, uploads, downloads: all of it. There's no Pro tier, no subscription and no unlock. A file app shouldn't ransom your own files back to you.",
+    "description": "Move files between your phone and Windows shares, NAS boxes, Linux machines and other phones.\n\nEverything is free: no Pro tier, no subscription, no unlock. A file app shouldn't ransom your own files back to you.",
     "features": [
-      "SMB2/3 shares, FTP and SFTP",
+      "SMB 2 and 3, FTP and SFTP",
       "Stream movies and music straight from a share, no download first",
       "Jellyfin: sign in, browse and stream",
-      "Built-in FTP server to host files from the phone",
-      "No ads, no subscription, no Pro tier"
+      "Built-in FTP server, so other devices can connect to your phone"
     ],
     "cover": "/projects/packmule/icon.png",
     "coverStyle": "icon",
