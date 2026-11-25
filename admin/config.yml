@@ -71,7 +71,35 @@ collections:
       - name: status
         label: Status
         required: false
-        hint: Like In development, Coming soon or Out now
+        hint: Like In development, Coming soon, Out now or Available on the App Store
+      - name: appStore
+        label: App Store link
+        required: false
+        type: url
+        hint: The app's App Store address, like https://apps.apple.com/app/id6809113803. Shows Apple's Download on the App Store badge, and Safari's App Store banner on iPhone.
+      - name: price
+        label: Price
+        required: false
+        hint: Like Free. Shown under At a glance.
+      - name: requires
+        label: Requires
+        required: false
+        hint: Like iOS 16 or later. Shown under At a glance.
+      - name: appCategory
+        label: App category
+        widget: select
+        required: false
+        hint: For Google. Pick the App Store category that fits best.
+        options: [Entertainment, Utilities, Games, Lifestyle, Food & Drink, Productivity, Education, Reference]
+      - name: searchTitle
+        label: Title for Google
+        required: false
+        hint: Optional. The headline in Google results and the browser tab, with the words people search for, like Tinbox Free GBA and Game Boy Emulator for iPhone. Keep it under 60 characters. Redfern's Outpost is added after it.
+      - name: searchDescription
+        label: Description for Google
+        widget: text
+        required: false
+        hint: Optional. The two lines under the headline in Google results, about 150 characters. Without it, the short summary is used.
       - name: summary
         label: Short summary
         widget: text

@@ -63,6 +63,17 @@ function paragraphs(text) {
     });
 }
 
+/* Apple's own "Download on the App Store" badge, loaded from Apple as their marketing guidelines ask.
+   tools/build-pages.py writes the same markup into each page ahead of time, so keep the two matching. */
+const APP_STORE_BADGE = "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us";
+
+function storeBadge(url) {
+  const href = url && safeUrl(url);
+  return href && el("a", { class: "store-badge", href, target: "_blank", rel: "noopener" }, [
+    el("img", { src: APP_STORE_BADGE, alt: "Download on the App Store", width: "144", height: "48" }),
+  ]);
+}
+
 function showError(where, message) {
   where.replaceChildren(el("div", { class: "empty", text: message }));
 }
@@ -205,7 +216,7 @@ async function renderProject(pageId) {
     return;
   }
 
-  document.title = project.title === SITE ? SITE : project.title + " · " + SITE;
+  // the page title comes from tools/build-pages.py (it can carry search words), so it isn't changed here
   if (project.kind === "Game") {
     const back = document.querySelector(".back");
     back.href = "./#games-section";
@@ -224,6 +235,7 @@ async function renderProject(pageId) {
       el("h1", { text: project.title }),
       el("p", { class: "lede", text: project.summary || "" }),
       metaLine([[project.platform], [project.status, "good"]]),
+      storeBadge(project.appStore),
     ]),
   ]);
 
@@ -256,9 +268,19 @@ async function renderProject(pageId) {
   }
 
   const right = el("aside", {});
+  // price and requirements, when the project has them
+  const glance = [["Price", project.price], ["Requires", project.requires]].filter(([, v]) => v);
+  if (glance.length) {
+    right.append(el("div", { class: "block" }, [
+      el("h2", { text: "At a glance" }),
+      el("dl", { class: "glance" }, glance.flatMap(([k, v]) => [el("dt", { text: k }), el("dd", { text: v })])),
+    ]));
+  }
+  // with an App Store badge (at the top of the page), the badge is the main button, so no link is the big orange one
+  const badge = Boolean(project.appStore && safeUrl(project.appStore));
   const links = (project.links || []).map((l, i) => {
     const url = safeUrl(l.url);
-    return url && el("a", { class: "btn block" + (i === 0 ? " primary" : ""), href: url,
+    return url && el("a", { class: "btn block" + (i === 0 && !badge ? " primary" : ""), href: url,
       target: "_blank", rel: "noopener", text: l.label || url });
   }).filter(Boolean);
   if (links.length) right.append(el("div", { class: "block" }, [el("h2", { text: "Links" }), ...links]));

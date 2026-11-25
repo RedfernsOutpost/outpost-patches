@@ -78,15 +78,26 @@
     "title": "Tinbox",
     "kind": "App",
     "platform": "iPhone",
-    "summary": "A free GBA, GB and GBC emulator for iPhone. No ads, no accounts, no paid version.",
-    "description": "A native iPhone emulator with a SwiftUI interface and Metal rendering, running the accurate mGBA core. It plays in portrait or landscape and keeps your library tidy.",
+    "status": "Available on the App Store",
+    "appStore": "https://apps.apple.com/app/id6809113803",
+    "price": "Free",
+    "requires": "iOS 16 or later",
+    "appCategory": "Entertainment",
+    "searchTitle": "Tinbox: Free GBA & Game Boy Emulator for iPhone",
+    "searchDescription": "Tinbox is a free Game Boy Advance, Game Boy and Game Boy Color emulator for iPhone, built on mGBA. Save states, rewind, RetroAchievements and controller support. No ads.",
+    "summary": "A free GBA, Game Boy and Game Boy Color emulator for iPhone. No ads, no accounts, no paid version.",
+    "description": "A native iPhone emulator with a SwiftUI interface and Metal rendering, running the accurate mGBA core. It plays in portrait or landscape and keeps your library tidy.\n\nTwo free homebrew games come preinstalled, so there's something to play the moment the lid opens. Add your own game files (.gba, .gb or .gbc, zipped or not) through the Files app. Games, saves, states and covers all live in plain folders you can see.\n\nNothing to sign up for and nothing tracking you. The only time Tinbox goes online is the optional box-art lookup and RetroAchievements sign-in.",
     "features": [
-      "Save states, rewind and fast-forward",
+      "10 save-state slots per game, plus an auto-save when you leave",
+      "Rewind up to 120 seconds, fast-forward up to Max",
       "Time Capsule: automatic snapshots of your whole playthrough",
-      "Speedrun timer and RetroAchievements",
-      "Themes, skins and your own button layout",
-      "Bluetooth controllers",
-      "Your games and saves stay in plain folders on your phone"
+      "RetroAchievements, with progress kept in your save states",
+      "Speedrun timer with splits and personal bests",
+      "Cheat codes and per-game settings",
+      "Themes, controller skins and your own button layout",
+      "Bluetooth and MFi controllers, with remapping",
+      "Tilt, solar and rumble cartridges use your phone's own sensors",
+      "Box-art lookup, or your own covers from Photos or Files"
     ],
     "cover": "/projects/tinbox/icon.png",
     "coverStyle": "icon",
@@ -99,15 +110,15 @@
       "/projects/tinbox/03-landscape.jpg"
     ],
     "screenshotNote": "The game shown is Tobu Tobu Girl Deluxe, a free homebrew game.",
-    "note": "Comes with two free homebrew games. Add games you own; Tinbox never downloads any.",
+    "note": "Tinbox plays game files you own and ships only freely licensed homebrew. It never downloads games, and it isn't affiliated with any console maker.",
     "links": [
-      {
-        "label": "Get it on the App Store",
-        "url": "https://apps.apple.com/app/id6809113803"
-      },
       {
         "label": "Support",
         "url": "https://redfernsoutpost.com/tinbox/"
+      },
+      {
+        "label": "Privacy policy",
+        "url": "https://redfernsoutpost.com/tinbox/privacy/"
       }
     ]
   },
@@ -116,6 +127,13 @@
     "title": "Ekipad",
     "kind": "App",
     "platform": "iPhone · Mac",
+    "status": "Available on the App Store",
+    "appStore": "https://apps.apple.com/app/id6838139422",
+    "price": "Free, and so is Ekipad Host for Mac",
+    "requires": "iPhone with iOS 17 or later, and a Mac with macOS 14 or later running Ekipad Host",
+    "appCategory": "Utilities",
+    "searchTitle": "Ekipad: Use Your iPhone as a Game Controller for Mac",
+    "searchDescription": "Ekipad turns your iPhone into a game controller for your Mac over Bluetooth, Wi-Fi or USB. Works with Steam, emulators and native games. Free, no ads, no accounts.",
     "summary": "Turn your iPhone into a game controller for your Mac, over Bluetooth, Wi-Fi or USB.",
     "description": "Ekipad works with Ekipad Host, a free app for your Mac. Games see a standard Xbox controller, so Steam, emulators and native ports work without any setup. For games that only take keyboard and mouse, map any button to a key instead.\n\nThe design borrows from Tokyo train signage: each player gets a track number and line colour, and the settings live on a departure board.",
     "features": [
@@ -143,12 +161,8 @@
     ],
     "smooth": true,
     "coverSmooth": true,
-    "note": "Requires iOS 17 and Ekipad Host (free, macOS 14 or later; controller mode needs macOS 15). Ekipad Host is notarized by Apple and comes from GitHub, since the Mac App Store doesn't allow virtual controllers.",
+    "note": "Ekipad Host is notarized by Apple and comes from GitHub, since the Mac App Store doesn't allow virtual controllers. Controller mode needs macOS 15; keyboard and mouse work on macOS 14.",
     "links": [
-      {
-        "label": "Get it on the App Store",
-        "url": "https://apps.apple.com/app/id6838139422"
-      },
       {
         "label": "Download Ekipad Host for Mac",
         "url": "https://github.com/RedfernsOutpost/ekipad/releases/latest"
