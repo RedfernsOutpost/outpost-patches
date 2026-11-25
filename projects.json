@@ -116,7 +116,6 @@
     "title": "Ekipad",
     "kind": "App",
     "platform": "iPhone · Mac",
-    "status": "In review for the App Store",
     "summary": "Turn your iPhone into a game controller for your Mac, over Bluetooth, Wi-Fi or USB.",
     "description": "Ekipad works with Ekipad Host, a free app for your Mac. Games see a standard Xbox controller, so Steam, emulators and native ports work without any setup. For games that only take keyboard and mouse, map any button to a key instead.\n\nThe design borrows from Tokyo train signage: each player gets a track number and line colour, and the settings live on a departure board.",
     "features": [
@@ -146,6 +145,10 @@
     "coverSmooth": true,
     "note": "Requires iOS 17 and Ekipad Host (free, macOS 14 or later; controller mode needs macOS 15). Ekipad Host is notarized by Apple and comes from GitHub, since the Mac App Store doesn't allow virtual controllers.",
     "links": [
+      {
+        "label": "Get it on the App Store",
+        "url": "https://apps.apple.com/app/id6838139422"
+      },
       {
         "label": "Download Ekipad Host for Mac",
         "url": "https://github.com/RedfernsOutpost/ekipad/releases/latest"
