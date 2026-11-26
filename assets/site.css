@@ -24,8 +24,8 @@
   --nav: #d4c8b5;
   --text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   --shadow-sm: rgba(0, 0, 0, .4);
-  --shadow: var(--shadow);
-  --shadow-lg: var(--shadow-lg);
+  --shadow: rgba(0, 0, 0, .45);
+  --shadow-lg: rgba(0, 0, 0, .5);
   --btn-bg: rgba(239, 230, 214, .06);
   --btn-bg-hover: rgba(239, 230, 214, .12);
   --btn-border: rgba(239, 230, 214, .22);
@@ -485,6 +485,13 @@ aside .note { border-left: 3px solid var(--pine); padding-left: 14px; }
 .store-badge { display: inline-block; margin-top: 16px; line-height: 0; border-radius: 8px; }
 .store-badge img { height: 48px; width: auto; }
 .store-badge:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---- app support pages (/ekipad/ and friends): icon, big title, App Store badge up top ---- */
+.support-head { padding: 30px 0 6px; margin-bottom: 36px; }
+.support-head h1 { font-size: 64px; letter-spacing: .5px; }
+.head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px; margin-top: 18px; }
+.head-actions .store-badge { margin-top: 0; }
+@media (max-width: 600px) { .support-head h1 { font-size: 46px; } }
 
 /* ---- at a glance (price, requirements) ------------------------------ */
 .glance { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; font-size: 15.5px; }
